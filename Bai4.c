@@ -15,7 +15,7 @@ int main(){
 
     DH dhang[200];
 
-    int n; int b[10000]={0};
+    int n; int b[10000]={0}; //cho tất cả phần tử của mảng bằng 0
     
     do{
         printf("Nhap vao so luong don hang: "); scanf("%d",&n);
@@ -33,7 +33,7 @@ int main(){
         
         printf("Nhap so luong: "); scanf("%d", &dhang[i].soluong);
 
-        b[dhang[i].soluong]++;
+        b[dhang[i].soluong]++; //1ms - O(n) , O(nlog(n))  
 
     }
 
@@ -43,7 +43,8 @@ int main(){
             if(b[dhang[i].soluong]>1){
                 printf("Phieu so: %d\n",i);
                 printf("Ten khach hang: %4s\n", dhang[i].name);
-                printf("Ma hang la: %d\n", dhang[i].mahang);          
+                printf("Ma hang la: %d\n", dhang[i].mahang);
+                printf("So luong la: %d\n", dhang[i].soluong);          
             }
          }
 

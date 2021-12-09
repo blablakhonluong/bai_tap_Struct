@@ -85,8 +85,10 @@ int main(){
     }
     printf("Sap xep tang dan theo ho ten: \n");
     tangdanhoten(sv,n);
+
     printf("Cac ban co diem nho hon 5: \n");
     diemtb_nhohon5(sv,n);
+    
     printf("Cac ban co diem lon hon bang 5 va sap xep giam dan: \n");
     diemtb_lonhon5(sv,n);
 
